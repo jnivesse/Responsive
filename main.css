@@ -1,0 +1,46 @@
+div{
+    height: 60px;
+    width: 500px;
+    border: 2px solid black;
+    margin: 30px;
+}
+h1{text-align: center;}
+
+@media only screen and (max-width: 640px){
+    #fenetre640{
+        background-color: blue;
+        color: white;
+    }
+    
+}
+@media all and (min-width: 768px) and (max-width: 1024px){
+    #fenetre800{
+        color: white;
+        background-color: blue;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280px){
+    #fenetre1024{
+        color: white;
+        background-color: blue;
+    }
+
+}
+@media all and (max-width: 480px){
+    #fenetre480{
+        color: white;
+        background-color: blue;
+    }
+}
+@media screen and (orientation:portrait){
+    #portrait{
+        color: white;
+        background-color: blue;
+    }
+}
+@media screen and (orientation:landscape){
+    #paysage{
+        color: white;
+        background-color: blue;
+    }
+}
