@@ -5,18 +5,27 @@ div{
     margin: 30px;
 }
 h1{text-align: center;}
+span{
+    display: none;
+}
+
 
 @media only screen and (max-width: 640px){
     #fenetre640{
         background-color: blue;
         color: white;
     }
-    
+    #texte640{
+        display:block
+    }
 }
-@media all and (min-width: 768px) and (max-width: 1024px){
+@media all and (min-width: 800px) and (max-width: 1024px){
     #fenetre800{
         color: white;
         background-color: blue;
+    }
+    #texte800{
+        display: block;
     }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1280px){
@@ -24,12 +33,17 @@ h1{text-align: center;}
         color: white;
         background-color: blue;
     }
-
+    #texte1024{
+        display: block;
+    }
 }
 @media all and (max-width: 480px){
     #fenetre480{
         color: white;
         background-color: blue;
+    }
+    #texte480{
+        display: block;
     }
 }
 @media screen and (orientation:portrait){
@@ -37,10 +51,16 @@ h1{text-align: center;}
         color: white;
         background-color: blue;
     }
+    #texteportrait{
+        display: block;
+    }
 }
 @media screen and (orientation:landscape){
     #paysage{
         color: white;
         background-color: blue;
+    }
+    #textepaysage{
+        display: block;
     }
 }
